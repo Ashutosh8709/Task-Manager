@@ -8,13 +8,6 @@ import Card from './Card';
 import Edit from './Edit';
 
 function App() {
-  const [count, setCount] = useState(0);
-  const fetchApi=async()=>{
-    // let response=await axios.get('http://localhost:8080/api');
-  };
-  useEffect(()=>{
-    fetchApi();
-  },[]);
 
   return (
     <>
