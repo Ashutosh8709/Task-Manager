@@ -21,21 +21,14 @@ export default function Create(){
             <Nav/>
             <div className="flex flex-wrap justify-center">
             <div className="h-72 w-72 bg-linear-to-tl from-sky-500 to-indigo-500 text-center mt-8 text-white rounded">
-                <p className="text-4xl font-bold mt-4">Add Task</p>
-                <Box
-      component="form"
-      sx={{ '& > :not(style)': { m: 1, width: '25ch' } }}
-      noValidate
-      autoComplete="off"
-    >
-      <TextField id="filled-basic" label="Title" required variant="filled" className="bg-white" value={title} onChange={(event)=>setTitle(event.target.value)}/>
-      <TextField id="filled-basic" label="Description" required variant="filled" className="bg-white" value={description} onChange={(event)=>setDescription(event.target.value)}/>
-      <Button variant="contained" color="success" onClick={handleSubmit}>Save Task</Button>
-    </Box>
-            </div>
-            
-            </div>
-            
+            <p className="text-4xl font-bold mt-4">Add Task</p>
+            <Box component="form" sx={{ '& > :not(style)': { m: 1, width: '25ch' } }} noValidate autoComplete="off">
+            <TextField id="filled-basic" label="Title" required variant="filled" className="bg-white" value={title} onChange={(event)=>setTitle(event.target.value)}/>
+            <TextField id="filled-basic" label="Description" required variant="filled" className="bg-white" value={description} onChange={(event)=>setDescription(event.target.value)}/>
+            <Button variant="contained" color="success" onClick={handleSubmit}>Save Task</Button>
+            </Box>
+        </div>
+        </div>
         </div>
     );
 }
