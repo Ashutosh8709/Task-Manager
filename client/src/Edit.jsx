@@ -15,7 +15,7 @@ export default function Edit(){
     const [description, setDescription] = useState("");
 
   // Fetch existing data
-  useEffect(async() => {
+  useEffect(()=>async() => {
     await axios.get(`http://localhost:8080/task/${id}`).then((res) => {
       setTitle(res.data.title);
       setDescription(res.data.description);
